@@ -9,12 +9,39 @@
 </head>
 <body>
     <main>
-        <article class="Contenedor">
+        <article>
             <header>
                 <h1>Dog Crud</h1>
             </header>
-            <section>
-                <button>Agregar mascota</button>
+            <section id="contenido">
+                <button id="btnAgregar">Agregar mascota</button>
+                <article class="ModalAgregar" id="modalAgregar">
+                    <header class="ModalAgregar-Cabecera">
+                        <h2>Agregar mascota</h2>
+                        <div class="ModalAgregar-BotonCerrar" id="btnCerrar">X</div>
+                    </header>
+                    <div class="ModalAgregar-Formulario">
+                        <div>
+                            <input id="nombre" type="text" placeholder="Nombre">
+                            <input id="raza" type="text" placeholder="Raza">
+                        </div>
+                        <div>
+                            <input id="correo" type="email" placeholder="Correo">
+                            <input id="telefono" type="tel" placeholder="Telefono">
+                        </div>
+                        <div>
+                            <input id="pais" type="text" placeholder="Pais">
+                            <input id="foto" type="url" placeholder="URL de Fotografia">
+                        </div>
+                        <textarea id="descripcion" name="descripcion" placeholder="Sobre él/ella"></textarea>
+                        <div class="ModalAgregar-Formulario-Botones">
+                            <div>
+                                <button id="aceptarModalAgregar">Aceptar</button>
+                            </div>
+                            <button id="cancelarModalAgregar">Cancelar</button>
+                        </div>
+                    </div>
+                </article>
             </section>
         </article>
     </main>

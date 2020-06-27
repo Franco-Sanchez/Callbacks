@@ -9,6 +9,10 @@ body {
     font-family: Roboto;
 }
 
+main {
+    margin-top: 10px;
+}
+
 article {
     width: 1085px;
     margin: 0 auto;
@@ -25,7 +29,7 @@ header {
 }
 
 section {
-    height: 731px;
+    height: 531px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -39,4 +43,9 @@ button {
     font-size: 18px;
     width: 244px;
     height: 67px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }

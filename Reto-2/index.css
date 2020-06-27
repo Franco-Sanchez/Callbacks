@@ -373,6 +373,10 @@ body {
   font-family: Roboto;
 }
 
+main {
+  margin-top: 10px;
+}
+
 article {
   width: 1085px;
   margin: 0 auto;
@@ -393,7 +397,7 @@ header {
 }
 
 section {
-  height: 731px;
+  height: 531px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,5 +417,87 @@ button {
   font-size: 18px;
   width: 244px;
   height: 67px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.ModalAgregar {
+  display: none;
+  width: 659px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.ModalAgregar-Cabecera {
+  background-color: white;
+  padding-left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ModalAgregar-Cabecera h2 {
+  font-size: 18px;
+}
+
+.ModalAgregar-BotonCerrar {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ModalAgregar-Formulario {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+}
+
+.ModalAgregar-Formulario div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (296px)[2];
+      grid-template-columns: repeat(2, 296px);
+  grid-gap: 27px;
+}
+
+.ModalAgregar-Formulario input {
+  font-size: 18px;
+  width: 296px;
+  height: 55px;
+  padding: 10px;
+}
+
+.ModalAgregar-Formulario input:focus, .ModalAgregar-Formulario textarea:focus {
+  border: 1px solid skyblue;
+}
+
+.ModalAgregar-Formulario textarea {
+  font-size: 18px;
+  font-family: Roboto;
+  width: 619px;
+  height: 100px;
+  padding: 10px;
+}
+
+.ModalAgregar-Formulario-Botones {
+  margin-bottom: 25px;
+}
+
+.ModalAgregar-Formulario-Botones button {
+  font-size: 14px;
+  width: 129px;
+  height: 41px;
+}
+
+.ModalAgregar-Formulario-Botones div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+1) ¿Por qué evitar los callbacks en llamadas asincronas?
+
+- Porque conforme se ejecutan más callbakcs, y estas a su vez dependen de otros, se crea un encademiento muy grande que a la larga hace díficil que el código se pueda mantenar y complica su lectura y desarrollo para cualquier programador. De prefencia, los callbacks son muy buenos cuando se trata de un solo llamado asíncrono.
+
+
+2) ¿Qué es una promesa?
+
+- Una promesa es un objeto instanciado que puede recibir más de dos parámetros, pero en los que destacan el "resolve" (resolución) y el "reject" (rechazo), que se llama básicamente cuando ocurre algún error en la operación asíncrona. Es importante mencionar que trabajan con callbacks y hacen que el código se pueda mantener.  
+
+3) ¿Qué es un callback hell?
+
+- Los callbacks hell se crean cuando se tiene más de un llamado asíncrono que depende de otro y estos se anidan, lo que generará un encademineto casi imposible de leer y tendremos algo parecido a un código espagueti.
+
+

@@ -388,12 +388,26 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-left: 20px;
+  padding-right: 20px;
   font-size: 36px;
   font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  cursor: pointer;
+  display: none;
+}
+
+p:hover {
+  color: white;
 }
 
 section {
@@ -435,6 +449,7 @@ button:hover {
 .ModalAgregar-Cabecera {
   background-color: white;
   padding-left: 0;
+  padding-right: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
